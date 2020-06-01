@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;700&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 1024px;
+  height: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 2px white solid;
+}
+
+.btn:hover {
+  padding: 1rem 2rem;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+#header {
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#fce38a), to(#f38181));
+  background: linear-gradient(90deg, #fce38a 0%, #f38181 100%);
+  height: 100vh;
+  padding: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header::before {
+  content: '';
+  position: absolute;
+  background: url("../images/main-bg-min.png") no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 100%;
+  opacity: 0.1;
+}
+
+#header #main-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+#header #main-nav .logo {
+  font-size: 30px;
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+#header #main-nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header #main-nav .nav-menu li {
+  cursor: pointer;
+  padding: 0 1.2rem;
+}
+
+#header #main-nav .nav-menu a {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 0.5rem 0;
+  text-align: center;
+  border-bottom: 2px transparent solid;
+}
+
+#header #main-nav .nav-menu a:hover {
+  border-bottom: 2px #fce38a solid;
+  color: #fce38a;
+}
+
+#header .main {
+  position: relative;
+  text-align: center;
+  margin: 5rem 1rem;
+  padding: 0 2rem;
+}
+
+#header .main h1 {
+  font-size: 60px;
+  font-weight: 300;
+  font-family: 'Kaushan Script', cursive;
+  color: white;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+#header .main p.l-heading {
+  font-size: 120px;
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.933;
+  margin: 2rem auto;
+}
+
+#header .main .bottom-line {
+  background: white;
+  height: 3px;
+  width: 3rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+#header .main button.btn {
+  background: none;
+  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+#header .main button.btn:hover {
+  border: 2px #fce38a solid;
+  color: #fce38a;
+}
+
+#about {
+  margin: 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  color: #333333;
+  line-height: 1.2;
+}
+
+#about h4 {
+  font-size: 25px;
+  font-family: 'Montserrat';
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+}
+
+#about .bottom-line {
+  background: #f38181;
+  height: 3px;
+  width: 3rem;
+  display: block;
+  margin: 2rem auto;
+}
+
+#about p {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #999999;
+  line-height: 1.6;
+  margin: 1rem;
+  padding: 0.5rem 4rem;
+}
+
+#about .about-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+#about .about-images img {
+  width: 100%;
+  height: 200px;
+}
+
+#about .about-images .overlay {
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#fce38a), to(#f38181));
+  background: linear-gradient(90deg, #fce38a 0%, #f38181 100%);
+  -webkit-box-shadow: 10px 10px #95e1d3;
+          box-shadow: 10px 10px #95e1d3;
+  height: 200px;
+}
+
+#about .about-images .overlay::before {
+  content: '';
+  background: url("../images/about3-min.png") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  opacity: 0.1;
+  width: 100%;
+  z-index: 1;
+}
+
+#about .about-images .overlay .overlay-text {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  text-align: center;
+}
+
+#about .about-images .overlay .overlay-text img {
+  width: 32px;
+  height: 24px;
+}
+
+#about .about-images .overlay .overlay-text p {
+  font-size: 18px;
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 0;
+}
+
+#facts {
+  background: #95e1d3;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+#facts .facts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#facts .facts .fact {
+  text-align: center;
+  padding: 3rem 0;
+  border-left: 1px white solid;
+}
+
+#facts .facts .fact:last-child {
+  border-right: 1px white solid;
+}
+
+#facts .facts .fact:first-child {
+  margin-left: -20px;
+}
+
+#facts .facts .fact h1 {
+  font-size: 60px;
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+#facts .facts .fact p {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+/*# sourceMappingURL=style.css.map */

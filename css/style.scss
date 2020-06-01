@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;700&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  //   background: grey;
+  color: white;
+}
+
+// utilities
+.container {
+  max-width: 1024px;
+  height: 100%;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  font-weight: bold;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 2px white solid;
+
+  &:hover {
+    padding: 1rem 2rem;
+    color: black;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+// header section
+#header {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgb(252, 227, 138) 0%,
+    rgb(243, 129, 129) 100%
+  );
+  height: 100vh;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('../images/main-bg-min.png') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.1;
+  }
+
+  //nav area
+
+  #main-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    .logo {
+      font-size: 30px;
+      font-family: 'Montserrat';
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .nav-menu {
+      display: flex;
+      li {
+        cursor: pointer;
+        padding: 0 1.2rem;
+      }
+
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.2;
+        padding: 0.5rem 0;
+        text-align: center;
+        border-bottom: 2px transparent solid;
+
+        &:hover {
+          border-bottom: 2px rgb(252, 227, 138) solid;
+          color: rgb(252, 227, 138);
+        }
+      }
+    }
+  }
+
+  //main header content
+  .main {
+    position: relative;
+    text-align: center;
+    margin: 5rem 1rem;
+    padding: 0 2rem;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 300;
+      font-family: 'Kaushan Script', cursive;
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+      margin: 1rem 0;
+    }
+
+    p.l-heading {
+      font-size: 120px;
+      font-family: 'Montserrat';
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 0.933;
+      margin: 2rem auto;
+    }
+
+    .bottom-line {
+      background: white;
+      height: 3px;
+      width: 3rem;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    button.btn {
+      background: none;
+      margin: 1rem 2rem;
+      padding: 1rem 2rem;
+      font-size: 14px;
+      font-family: 'Montserrat';
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+
+      &:hover {
+        border: 2px rgb(252, 227, 138) solid;
+        color: rgb(252, 227, 138);
+      }
+    }
+  }
+}
+
+// ABout sction
+#about {
+  margin: 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    // margin: 1rem;
+  }
+
+  h4 {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+  }
+
+  .bottom-line {
+    background: rgb(243, 129, 129);
+    height: 3px;
+    width: 3rem;
+    display: block;
+    margin: 2rem auto;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    margin: 1rem;
+    padding: 0.5rem 4rem;
+  }
+
+  .about-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+
+    img {
+      width: 100%;
+      height: 200px;
+    }
+
+    .overlay {
+      position: relative;
+      background: linear-gradient(
+        90deg,
+        rgb(252, 227, 138) 0%,
+        rgb(243, 129, 129) 100%
+      );
+      box-shadow: 10px 10px rgb(149, 225, 211);
+      height: 200px;
+
+      &::before {
+        content: '';
+        background: url('../images/about3-min.png') no-repeat center
+          center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: inherit;
+        opacity: 0.1;
+        width: 100%;
+        z-index: 1;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        text-align: center;
+        // margin: 1rem auto;
+
+        img {
+          width: 32px;
+          height: 24px;
+        }
+
+        p {
+          font-size: 18px;
+          font-family: 'Montserrat';
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          text-transform: uppercase;
+          line-height: 1.2;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+//facts section
+#facts {
+  background: rgb(149, 225, 211);
+  // height: 240px;
+
+  margin: 2rem 0;
+  padding: 0;
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    align-items: center;
+
+    .fact {
+      text-align: center;
+      padding: 3rem 0;
+      border-left: 1px white solid;
+
+      &:last-child {
+        border-right: 1px white solid;
+      }
+
+      &:first-child {
+        margin-left: -20px;
+      }
+
+      h1 {
+        font-size: 60px;
+        font-family: 'Montserrat';
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: 'Montserrat';
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.2;
+      }
+    }
+  }
+}
