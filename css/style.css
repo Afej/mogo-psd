@@ -398,7 +398,7 @@ ul {
   background: whitesmoke;
   margin: 1rem;
   padding: 3rem 0 0 0;
-  height: 800px;
+  height: 600px;
   text-align: center;
 }
 
@@ -438,23 +438,88 @@ ul {
   margin: 1rem auto;
 }
 
-#unique-design .device {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-#unique-design .device #tab {
+#unique-design #tab {
   position: absolute;
   top: 27%;
-  left: 25%;
+  left: 30%;
   width: 400px;
 }
 
-#unique-design .device #phone {
+#unique-design #phone {
   position: absolute;
   bottom: -75px;
-  right: 20%;
+  right: 22%;
   width: 200px;
+}
+
+#service {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#service h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  color: #333333;
+  line-height: 1.2;
+}
+
+#service h4 {
+  font-size: 25px;
+  font-family: 'Montserrat';
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+}
+
+#service .bottom-line {
+  background: #f38181;
+  height: 3px;
+  width: 3rem;
+  display: block;
+  margin: 2rem auto;
+}
+
+#service p {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #999999;
+  line-height: 1.6;
+  text-align: center;
+  margin: 1rem;
+  padding: 0.5rem 4rem;
+}
+
+#service .service-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 3rem;
+  padding: 0 2rem;
+}
+
+#service .service-grid > img {
+  width: 400px;
+}
+
+#service .service-grid .service {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#service .service-grid .service h3 {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 /*# sourceMappingURL=style.css.map */
