@@ -227,7 +227,7 @@ ul {
         rgb(243, 129, 129) 100%
       );
       box-shadow: 10px 10px rgb(149, 225, 211);
-      height: 200px;
+      height: 190px;
 
       &::before {
         content: '';
@@ -559,12 +559,15 @@ ul {
 #quotes {
   background-color: rgb(248, 248, 248);
   height: 290px;
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 2rem 0;
 
   .quote {
     position: relative;
     display: flex;
+    padding: 2rem;
+    // justify-content: space-evenly;
+    align-items: center;
 
     .arrow {
       position: absolute;
@@ -585,8 +588,8 @@ ul {
 
     #speech {
       border: 3px rgb(149, 225, 211) solid;
-      padding: 3rem;
-      margin: 1rem;
+      padding: 2rem;
+      margin: 0 1rem;
 
       img {
         width: 63px;
@@ -595,26 +598,290 @@ ul {
       }
     }
 
-    p {
-      font-size: 24px;
-      font-family: 'Roboto';
-      color: rgb(153, 153, 153);
-      font-style: italic;
-      line-height: 1.5;
-      // text-align: left;
+    #quote-text {
+      margin-left: 1rem;
+      p {
+        font-size: 20px;
+        font-family: 'Roboto';
+        color: rgb(153, 153, 153);
+        font-style: italic;
+        line-height: 1.5s;
+        margin: 1rem 0;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-family: 'Kaushan Script', cursive;
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+        text-transform: capitalize;
+
+        .bottom-line {
+          background: rgb(243, 129, 129);
+          height: 3px;
+          width: 3rem;
+          display: inline-block;
+          margin-right: 1rem;
+        }
+      }
     }
   }
+}
+
+//team section
+#our-team {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+  }
+
   .bottom-line {
     background: rgb(243, 129, 129);
     height: 3px;
     width: 3rem;
     display: block;
-    // margin: 2rem;
-    h1 {
-      font-size: 24px;
-      font-family: 'Kaushan Script', cursive;
+    margin: 2rem auto;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem 4rem;
+  }
+
+  .team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+
+    h3 {
+      font-size: 14px;
+      font-family: 'Montserrat';
       color: rgb(51, 51, 51);
+      text-transform: uppercase;
       line-height: 1.2;
+    }
+
+    p {
+      font-size: 15px;
+      font-family: 'Roboto';
+      color: rgb(153, 153, 153);
+      font-style: italic;
+      line-height: 1.6;
+      text-transform: capitalize;
+    }
+
+    img {
+      width: 100%;
+      height: 350px;
+      margin-bottom: 1rem;
+    }
+
+    .overlay {
+      position: relative;
+      background: linear-gradient(
+        90deg,
+        rgb(252, 227, 138) 0%,
+        rgb(243, 129, 129) 100%
+      );
+      box-shadow: 10px 10px rgb(149, 225, 211);
+      height: 340px;
+      margin-bottom: 26px;
+
+      &::before {
+        content: '';
+        background: url('../images/team3-min.png') no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: inherit;
+        opacity: 0.1;
+        width: 100%;
+        z-index: 1;
+      }
+
+      #overlay-image {
+        position: absolute;
+        top: 45%;
+        left: 20%;
+        width: 200px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+// brand logo section
+#logo {
+  background-color: rgb(248, 248, 248);
+  height: 200px;
+  margin: 1rem 0;
+
+  #logo-images {
+    margin: 3rem 0;
+  }
+}
+
+#works {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+  }
+
+  .bottom-line {
+    background: rgb(243, 129, 129);
+    height: 3px;
+    width: 3rem;
+    display: block;
+    margin: 2rem auto;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: 'Roboto';
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem 4rem;
+  }
+
+  .work-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      'img1 img2 img3 img4'
+      'img5 img6 img3 img7';
+    margin-top: 2rem;
+
+    img {
+      width: 100%;
+      height: 250px;
+    }
+
+    #img1 {
+      grid-area: img1;
+    }
+    #img2 {
+      grid-area: img2;
+    }
+    #img3 {
+      grid-area: img3;
+      height: 500px;
+    }
+    #img4 {
+      grid-area: img4;
+    }
+    #img5 {
+      grid-area: img5;
+    }
+    #img6 {
+      grid-area: img6;
+    }
+    #img7 {
+      grid-area: img7;
+    }
+  }
+}
+
+//testimonial section
+#testimonial {
+  background-color: rgb(248, 248, 248);
+  height: 290px;
+  margin: 1rem 0;
+  padding: 2rem 0;
+
+  .testimonial {
+    position: relative;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+
+    .arrow {
+      position: absolute;
+      width: 12px;
+      height: 22px;
+      // margin: 0 1.5rem;
+
+      &#left {
+        top: 50%;
+        left: -20px;
+      }
+
+      &#right {
+        top: 50%;
+        right: -20px;
+      }
+    }
+
+    #test-img {
+      width: 160px;
+      height: 160px;
+    }
+
+    #text {
+      margin-left: 2rem;
+      p {
+        font-size: 20px;
+        font-family: 'Roboto';
+        color: rgb(153, 153, 153);
+        font-style: italic;
+        line-height: 1.5s;
+        margin: 1rem 0;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-family: 'Kaushan Script', cursive;
+        color: rgb(51, 51, 51);
+        line-height: 1.2;
+        text-transform: capitalize;
+
+        .bottom-line {
+          background: rgb(243, 129, 129);
+          height: 3px;
+          width: 3rem;
+          display: inline-block;
+          margin-right: 1rem;
+        }
+      }
     }
   }
 }
