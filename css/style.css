@@ -499,27 +499,137 @@ ul {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin: 3rem;
-  padding: 0 2rem;
+  margin: 3rem 0;
+  padding: 0;
 }
 
 #service .service-grid > img {
-  width: 400px;
+  width: 570px;
+  height: 380px;
 }
 
 #service .service-grid .service {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-#service .service-grid .service h3 {
+#service .service-grid .service .service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px gray solid;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: right;
+}
+
+#service .service-grid .service .service-item img {
+  width: 30px;
+  height: 30px;
+  margin: 0 1rem;
+}
+
+#service .service-grid .service .service-item h3 {
   font-size: 14px;
   font-family: 'Montserrat';
   color: #333333;
   text-transform: uppercase;
+  line-height: 1.2;
+}
+
+#service .service-grid .service .service-item .arrow {
+  width: 22px;
+  height: 12px;
+  display: block;
+  margin: 0 1rem 0 auto;
+}
+
+#service .service-grid .service .service-item#photography {
+  margin-bottom: 0;
+}
+
+#service .service-grid .service .service-item#service-text {
+  border-top: none;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#quotes {
+  background-color: #f8f8f8;
+  height: 290px;
+  margin: 1rem;
+  padding: 2rem 0;
+}
+
+#quotes .quote {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#quotes .quote .arrow {
+  position: absolute;
+  width: 12px;
+  height: 22px;
+}
+
+#quotes .quote .arrow#left {
+  top: 50%;
+  left: -20px;
+}
+
+#quotes .quote .arrow#right {
+  top: 50%;
+  right: -20px;
+}
+
+#quotes .quote #speech {
+  border: 3px #95e1d3 solid;
+  padding: 3rem;
+  margin: 1rem;
+}
+
+#quotes .quote #speech img {
+  width: 63px;
+  height: 61px;
+}
+
+#quotes .quote p {
+  font-size: 24px;
+  font-family: 'Roboto';
+  color: #999999;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+#quotes .bottom-line {
+  background: #f38181;
+  height: 3px;
+  width: 3rem;
+  display: block;
+}
+
+#quotes .bottom-line h1 {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  color: #333333;
   line-height: 1.2;
 }
 /*# sourceMappingURL=style.css.map */

@@ -388,6 +388,7 @@ ul {
   }
 }
 
+//unique designn section
 #unique-design {
   position: relative;
   background: whitesmoke;
@@ -448,6 +449,7 @@ ul {
   }
 }
 
+// second service section
 #service {
   margin-top: 3rem;
   padding: 2rem 0;
@@ -492,25 +494,127 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    margin: 3rem;
-    padding: 0 2rem;
+    margin: 3rem 0;
+    padding: 0;
 
     & > img {
-      width: 400px;
+      width: 570px;
+      height: 380px;
     }
 
     .service {
-      display: grid;
-      grid-template-rows: repeat(3, 1fr);
-      gap: 10px;
+      display: flex;
+      flex-direction: column;
 
-      h3 {
-        font-size: 14px;
-        font-family: 'Montserrat';
-        color: rgb(51, 51, 51);
-        text-transform: uppercase;
-        line-height: 1.2;
+      .service-item {
+        display: flex;
+        border: 1px gray solid;
+        margin-bottom: 1rem;
+        padding: 1rem 0;
+        align-items: center;
+        justify-items: right;
+
+        img {
+          width: 30px;
+          height: 30px;
+          margin: 0 1rem;
+        }
+
+        h3 {
+          font-size: 14px;
+          font-family: 'Montserrat';
+          color: rgb(51, 51, 51);
+          text-transform: uppercase;
+          line-height: 1.2;
+        }
+
+        .arrow {
+          width: 22px;
+          height: 12px;
+          display: block;
+          margin: 0 1rem 0 auto;
+        }
+
+        &#photography {
+          margin-bottom: 0;
+        }
+        &#service-text {
+          border-top: none;
+          margin: 0 0 1rem 0;
+          padding: 1rem;
+          font-size: 15px;
+          font-family: 'Roboto';
+          color: rgb(153, 153, 153);
+          font-style: italic;
+          line-height: 1.6;
+          text-align: left;
+          align-self: flex-end;
+        }
       }
+    }
+  }
+}
+
+//quotes section
+#quotes {
+  background-color: rgb(248, 248, 248);
+  height: 290px;
+  margin: 1rem;
+  padding: 2rem 0;
+
+  .quote {
+    position: relative;
+    display: flex;
+
+    .arrow {
+      position: absolute;
+      width: 12px;
+      height: 22px;
+      // margin: 0 1.5rem;
+
+      &#left {
+        top: 50%;
+        left: -20px;
+      }
+
+      &#right {
+        top: 50%;
+        right: -20px;
+      }
+    }
+
+    #speech {
+      border: 3px rgb(149, 225, 211) solid;
+      padding: 3rem;
+      margin: 1rem;
+
+      img {
+        width: 63px;
+        height: 61px;
+        // margin: 1rem;
+      }
+    }
+
+    p {
+      font-size: 24px;
+      font-family: 'Roboto';
+      color: rgb(153, 153, 153);
+      font-style: italic;
+      line-height: 1.5;
+      // text-align: left;
+    }
+  }
+  .bottom-line {
+    background: rgb(243, 129, 129);
+    height: 3px;
+    width: 3rem;
+    display: block;
+    // margin: 2rem;
+    h1 {
+      font-size: 24px;
+      font-family: 'Kaushan Script', cursive;
+      color: rgb(51, 51, 51);
+      line-height: 1.2;
     }
   }
 }
