@@ -392,7 +392,7 @@ ul {
 #unique-design {
   position: relative;
   background: whitesmoke;
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 3rem 0 0 0;
   height: 600px;
   text-align: center;
@@ -444,7 +444,7 @@ ul {
   #phone {
     position: absolute;
     bottom: -75px;
-    right: 22%;
+    right: 27%;
     width: 200px;
   }
 }
@@ -823,7 +823,7 @@ ul {
 
 //testimonial section
 #testimonial {
-  background-color: rgb(248, 248, 248);
+  // background-color: rgb(248, 248, 248);
   height: 290px;
   margin: 1rem 0;
   padding: 2rem 0;
@@ -881,6 +881,122 @@ ul {
           display: inline-block;
           margin-right: 1rem;
         }
+      }
+    }
+  }
+}
+
+// what people saay
+#people-say {
+  position: relative;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background: whitesmoke;
+  // margin: 1rem;
+  padding: 3rem 0 0 0;
+  height: 700px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('../images/what-people-say-min.png') no-repeat center
+      center/cover;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.1;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .bottom-line {
+    background: rgb(243, 129, 129);
+    height: 3px;
+    width: 3rem;
+    display: block;
+    margin: 2rem auto;
+  }
+
+  .testimony-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+    padding: 1rem 0;
+    gap: 3rem;
+
+    .grid-item {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        'img h3 .'
+        'img p . '
+        'img line .'
+        'img text text';
+      // padding: 1rem 0;
+      align-items: center;
+
+      #tes-img {
+        grid-area: img;
+        margin: 0 1rem 0 0;
+      }
+
+      h3 {
+        grid-area: h3;
+        font-size: 14px;
+        font-family: 'Montserrat';
+        color: rgb(51, 51, 51);
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        grid-area: p;
+        font-size: 15px;
+        font-family: 'Roboto';
+        color: rgb(51, 51, 51);
+        font-style: italic;
+        line-height: 1.6;
+        text-transform: capitalize;
+        margin-bottom: 0.5rem;
+      }
+
+      .bottom-line {
+        grid-area: line;
+        background: rgb(243, 129, 129);
+        height: 3px;
+        width: 3rem;
+        display: block;
+        margin: 0;
+      }
+
+      #test-text {
+        grid-area: text;
+        padding: 1rem 0;
+        font-size: 15px;
+        font-family: 'Roboto';
+        color: rgb(153, 153, 153);
+        line-height: 1.6;
+        font-style: unset;
+        text-transform: none;
       }
     }
   }
