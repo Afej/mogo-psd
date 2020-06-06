@@ -196,7 +196,7 @@ ul {
     height: 3px;
     width: 3rem;
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 
   p {
@@ -344,7 +344,7 @@ ul {
     height: 3px;
     width: 3rem;
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 
   .services {
@@ -477,7 +477,7 @@ ul {
     height: 3px;
     width: 3rem;
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 
   p {
@@ -656,7 +656,7 @@ ul {
     height: 3px;
     width: 3rem;
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 
   p {
@@ -770,7 +770,7 @@ ul {
     height: 3px;
     width: 3rem;
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 
   p {
@@ -893,7 +893,7 @@ ul {
   padding: 2rem 0;
   background: whitesmoke;
   // margin: 1rem;
-  padding: 3rem 0 0 0;
+  // padding: 3rem 0 0 0;
   height: 700px;
 
   &::before {
@@ -932,7 +932,7 @@ ul {
     height: 3px;
     width: 3rem;
     display: block;
-    margin: 2rem auto;
+    margin: 1rem auto;
   }
 
   .testimony-grid {
@@ -997,6 +997,210 @@ ul {
         line-height: 1.6;
         font-style: unset;
         text-transform: none;
+      }
+    }
+  }
+}
+
+//blog section
+#blog {
+  margin-top: 3rem;
+  padding: 2rem 0;
+
+  h2 {
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 25px;
+    font-family: 'Montserrat';
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .bottom-line {
+    background: rgb(243, 129, 129);
+    height: 3px;
+    width: 3rem;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .blog-item {
+      .blog-image {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 200px;
+          margin: 1rem 0;
+        }
+        .date {
+          position: absolute;
+          top: 62%;
+          left: -10px;
+          background-color: rgb(149, 225, 211);
+          width: 50px;
+          height: 60px;
+          font-size: 1.2rem;
+          font-family: 'Montserrat';
+          font-weight: bold;
+          // text-transform: capitalize;
+          line-height: 1.2;
+          text-align: center;
+          padding-top: 0.5rem;
+
+          .min {
+            font-weight: 200;
+            font-size: 1rem;
+            // color: red;
+            // text-transform: capitalize;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 14px;
+        font-family: 'Montserrat';
+        color: rgb(51, 51, 51);
+        text-transform: uppercase;
+        line-height: 1.2;
+      }
+
+      .blog-text {
+        font-size: 15px;
+        font-family: 'Roboto';
+        color: rgb(153, 153, 153);
+        line-height: 1.6;
+        margin: 1rem 0;
+      }
+
+      .img-text {
+        font-size: 15px;
+        font-family: 'Roboto';
+        color: rgb(153, 153, 153);
+        font-style: italic;
+        line-height: 1.6;
+        margin-right: 1rem;
+
+        img {
+          padding-right: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+// map section
+#map {
+  position: relative;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background: whitesmoke;
+  height: 200px;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('../images/map-min.png') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.1;
+  }
+
+  .map-text {
+    display: block;
+    margin: 2rem 0;
+
+    h4 {
+      font-size: 25px;
+      font-family: 'Montserrat';
+      color: rgb(243, 129, 129);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+
+    .bottom-line {
+      background: rgb(243, 129, 129);
+      height: 3px;
+      width: 3rem;
+      display: block;
+      margin: 1rem auto;
+    }
+  }
+}
+
+//footer
+#footer {
+  margin: 1rem 0;
+  padding: 3rem 0;
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 1rem;
+
+    #footer-a {
+      #footer-logo {
+        font-size: 2rem;
+        font-family: 'Montserrat';
+        color: rgb(204, 204, 204);
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 15px;
+        font-family: 'Roboto';
+        color: rgb(153, 153, 153);
+        line-height: 1.6;
+        margin-bottom: 3rem;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-family: 'Montserrat';
+        color: rgb(51, 51, 51);
+        font-weight: bold;
+        line-height: 1.2;
+
+        span {
+          font-size: 15px;
+        }
+      }
+
+      .follow-us {
+        margin: 1rem 0;
+        border-top: 1px grey solid;
+        padding: 1rem 0;
+
+        p {
+          font-size: 15px;
+          font-family: 'Roboto';
+          color: rgb(153, 153, 153);
+          font-style: italic;
+          line-height: 1.6;
+        }
       }
     }
   }

@@ -199,7 +199,7 @@ ul {
   height: 3px;
   width: 3rem;
   display: block;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 #about p {
@@ -345,7 +345,7 @@ ul {
   height: 3px;
   width: 3rem;
   display: block;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 #services .services {
@@ -480,7 +480,7 @@ ul {
   height: 3px;
   width: 3rem;
   display: block;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 #service p {
@@ -672,7 +672,7 @@ ul {
   height: 3px;
   width: 3rem;
   display: block;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 #our-team p {
@@ -785,7 +785,7 @@ ul {
   height: 3px;
   width: 3rem;
   display: block;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 #works p {
@@ -928,7 +928,6 @@ ul {
   margin-top: 3rem;
   padding: 2rem 0;
   background: whitesmoke;
-  padding: 3rem 0 0 0;
   height: 700px;
 }
 
@@ -967,7 +966,7 @@ ul {
   height: 3px;
   width: 3rem;
   display: block;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 #people-say .testimony-grid {
@@ -1047,5 +1046,204 @@ ul {
   line-height: 1.6;
   font-style: unset;
   text-transform: none;
+}
+
+#blog {
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+
+#blog h2 {
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#blog h4 {
+  font-size: 25px;
+  font-family: 'Montserrat';
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+#blog .bottom-line {
+  background: #f38181;
+  height: 3px;
+  width: 3rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+#blog .blog-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#blog .blog-grid .blog-item .blog-image {
+  position: relative;
+}
+
+#blog .blog-grid .blog-item .blog-image img {
+  width: 100%;
+  height: 200px;
+  margin: 1rem 0;
+}
+
+#blog .blog-grid .blog-item .blog-image .date {
+  position: absolute;
+  top: 62%;
+  left: -10px;
+  background-color: #95e1d3;
+  width: 50px;
+  height: 60px;
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+#blog .blog-grid .blog-item .blog-image .date .min {
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+#blog .blog-grid .blog-item h1 {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+#blog .blog-grid .blog-item .blog-text {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #999999;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+#blog .blog-grid .blog-item .img-text {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+  margin-right: 1rem;
+}
+
+#blog .blog-grid .blog-item .img-text img {
+  padding-right: 0.2rem;
+}
+
+#map {
+  position: relative;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  background: whitesmoke;
+  height: 200px;
+  text-align: center;
+}
+
+#map::before {
+  content: '';
+  position: absolute;
+  background: url("../images/map-min.png") no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 100%;
+  opacity: 0.1;
+}
+
+#map .map-text {
+  display: block;
+  margin: 2rem 0;
+}
+
+#map .map-text h4 {
+  font-size: 25px;
+  font-family: 'Montserrat';
+  color: #f38181;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+#map .map-text .bottom-line {
+  background: #f38181;
+  height: 3px;
+  width: 3rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+#footer {
+  margin: 1rem 0;
+  padding: 3rem 0;
+}
+
+#footer .footer-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 1fr 1fr;
+      grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 1rem;
+}
+
+#footer .footer-content #footer-a #footer-logo {
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  color: #cccccc;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+#footer .footer-content #footer-a p {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #999999;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+#footer .footer-content #footer-a h3 {
+  font-size: 18px;
+  font-family: 'Montserrat';
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+#footer .footer-content #footer-a h3 span {
+  font-size: 15px;
+}
+
+#footer .footer-content #footer-a .follow-us {
+  margin: 1rem 0;
+  border-top: 1px grey solid;
+  padding: 1rem 0;
+}
+
+#footer .footer-content #footer-a .follow-us p {
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=style.css.map */
