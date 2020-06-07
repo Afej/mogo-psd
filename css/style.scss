@@ -1151,13 +1151,13 @@ ul {
 
 //footer
 #footer {
-  margin: 1rem 0;
-  padding: 3rem 0;
+  margin-top: 1rem;
+  padding-top: 3rem;
 
   .footer-content {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 1.2rem;
 
     #footer-a {
       #footer-logo {
@@ -1190,9 +1190,11 @@ ul {
       }
 
       .follow-us {
-        margin: 1rem 0;
+        margin-top: 1rem;
         border-top: 1px grey solid;
-        padding: 1rem 0;
+        padding-top: 1.5rem;
+        display: flex;
+        // align-items: center;
 
         p {
           font-size: 15px;
@@ -1200,8 +1202,124 @@ ul {
           color: rgb(153, 153, 153);
           font-style: italic;
           line-height: 1.6;
+          margin-right: 2rem;
+        }
+
+        img {
+          // width: 16px;
+          height: 15px;
         }
       }
+
+      .form-group {
+        margin: 1rem 0;
+
+        #form-item {
+          padding: 1rem 0.5rem;
+          font-size: 15px;
+          font-family: 'Roboto';
+          color: rgb(204, 204, 204);
+          font-style: italic;
+          line-height: 1.6;
+          width: 180px;
+          height: 44px;
+        }
+
+        input[type='button'] {
+          background-color: rgb(149, 225, 211);
+          font-size: 14px;
+          font-family: 'Montserrat';
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          text-transform: uppercase;
+          line-height: 1.2;
+          text-align: center;
+          width: 100px;
+          height: 40px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    #blogs {
+      #blog-title {
+        font-size: 1rem;
+        font-family: 'Montserrat';
+        color: rgb(51, 51, 51);
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+      }
+
+      .blog-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        img {
+          width: 119px;
+          height: 79px;
+          margin-right: 1rem;
+        }
+
+        h1 {
+          font-size: 12px;
+          font-family: 'Montserrat';
+          color: rgb(51, 51, 51);
+          text-transform: uppercase;
+          line-height: 1.5;
+        }
+
+        p {
+          font-size: 13px;
+          font-family: 'Roboto';
+          color: rgb(153, 153, 153);
+          font-style: italic;
+          line-height: 1.846;
+        }
+      }
+    }
+
+    #instagram {
+      h1 {
+        font-size: 1rem;
+        font-family: 'Montserrat';
+        color: rgb(51, 51, 51);
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+      }
+
+      .insta-img {
+        margin-bottom: 1rem;
+        img {
+          width: 88px;
+          height: 88px;
+        }
+      }
+      a {
+        font-size: 1rem;
+        font-family: 'Roboto';
+        color: rgb(51, 51, 51);
+        font-style: italic;
+        line-height: 1.846;
+      }
+    }
+  }
+
+  .footer-copyright {
+    margin-top: 3rem;
+    border-top: 1px gray solid;
+    padding: 1rem 0;
+
+    p {
+      font-size: 1rem;
+      font-family: 'Kaushan Script', cursive;
+      color: rgb(51, 51, 51);
+      line-height: 1.2;
+      text-align: center;
+      font-weight: bold;
     }
   }
 }
