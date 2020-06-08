@@ -1,0 +1,186 @@
+// large screens
+@media all and (min-width: 1200px) {
+  #unique-design {
+    #tab {
+      position: absolute;
+      top: 27%;
+      left: 35%;
+      width: 400px;
+    }
+
+    #phone {
+      position: absolute;
+      bottom: -75px;
+      right: 30%;
+      width: 200px;
+    }
+  }
+}
+
+// tablet view
+@media all and (max-width: 768px) and (min-width: 520px) {
+  #header {
+    #main-nav {
+      .nav-menu {
+        li {
+          padding: 0 0.3rem;
+        }
+      }
+    }
+
+    .main {
+      h1 {
+        font-size: 50px;
+      }
+
+      p.l-heading {
+        font-size: 100px;
+      }
+    }
+  }
+
+  #about {
+    .about-images {
+      img {
+        height: 180px;
+      }
+
+      .overlay {
+        height: 170px;
+      }
+    }
+  }
+
+  #facts {
+    .facts {
+      .fact {
+        &:first-child {
+          margin-left: 0;
+        }
+        h1 {
+          font-size: 50px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  #services {
+    .services {
+      .service-item {
+        .service-text {
+          padding: 0 0.5rem;
+        }
+      }
+    }
+  }
+
+  #unique-design {
+    #tab {
+      left: 25%;
+    }
+
+    #phone {
+      right: 13%;
+    }
+  }
+
+  #service {
+    .service-grid {
+      & > img {
+        width: 360px;
+        height: 290px;
+      }
+      .service {
+        .service-item {
+          padding: 0.5rem 0;
+          margin-bottom: 0.5rem;
+
+          &#service-text {
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  #quotes {
+    .quote {
+      .arrow {
+        &#left {
+          left: -10px;
+        }
+
+        &#right {
+          right: -5px;
+        }
+      }
+    }
+  }
+
+  #our-team {
+    .team {
+      grid-template-columns: repeat(3, 220px);
+      gap: 1.5rem;
+
+      p {
+        margin: 0;
+        padding: 0.5rem 2rem;
+      }
+
+      img {
+        height: 250px;
+      }
+
+      .overlay {
+        height: 240px;
+
+        #overlay-image {
+          left: 15%;
+          width: 150px;
+          height: 35px;
+        }
+      }
+    }
+  }
+
+  #logo {
+    #logo-images {
+      padding: 0 1rem;
+    }
+  }
+
+  #testimonial {
+    .testimonial {
+      .arrow {
+        &#left {
+          left: -10px;
+        }
+
+        &#right {
+          right: -5px;
+        }
+      }
+    }
+  }
+
+  #people-say {
+    .testimony-grid {
+      gap: 1.5rem;
+
+      .grid-item {
+        #tes-img {
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+// phone and smaller screens
+@media all and (max-width: 520px) {
+}

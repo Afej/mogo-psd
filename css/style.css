@@ -755,6 +755,7 @@ ul {
 
 #logo #logo-images {
   margin: 3rem 0;
+  width: 100%;
 }
 
 #works {
@@ -1365,5 +1366,109 @@ ul {
   line-height: 1.2;
   text-align: center;
   font-weight: bold;
+}
+
+@media all and (min-width: 1200px) {
+  #unique-design #tab {
+    position: absolute;
+    top: 27%;
+    left: 35%;
+    width: 400px;
+  }
+  #unique-design #phone {
+    position: absolute;
+    bottom: -75px;
+    right: 30%;
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 768px) and (min-width: 520px) {
+  #header #main-nav .nav-menu li {
+    padding: 0 0.3rem;
+  }
+  #header .main h1 {
+    font-size: 50px;
+  }
+  #header .main p.l-heading {
+    font-size: 100px;
+  }
+  #about .about-images img {
+    height: 180px;
+  }
+  #about .about-images .overlay {
+    height: 170px;
+  }
+  #facts .facts .fact:first-child {
+    margin-left: 0;
+  }
+  #facts .facts .fact h1 {
+    font-size: 50px;
+  }
+  #facts .facts .fact p {
+    font-size: 12px;
+  }
+  #services .services .service-item .service-text {
+    padding: 0 0.5rem;
+  }
+  #unique-design #tab {
+    left: 25%;
+  }
+  #unique-design #phone {
+    right: 13%;
+  }
+  #service .service-grid > img {
+    width: 360px;
+    height: 290px;
+  }
+  #service .service-grid .service .service-item {
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+  }
+  #service .service-grid .service .service-item#service-text {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+  #quotes .quote .arrow#left {
+    left: -10px;
+  }
+  #quotes .quote .arrow#right {
+    right: -5px;
+  }
+  #our-team .team {
+    -ms-grid-columns: (220px)[3];
+        grid-template-columns: repeat(3, 220px);
+    gap: 1.5rem;
+  }
+  #our-team .team p {
+    margin: 0;
+    padding: 0.5rem 2rem;
+  }
+  #our-team .team img {
+    height: 250px;
+  }
+  #our-team .team .overlay {
+    height: 240px;
+  }
+  #our-team .team .overlay #overlay-image {
+    left: 15%;
+    width: 150px;
+    height: 35px;
+  }
+  #logo #logo-images {
+    padding: 0 1rem;
+  }
+  #testimonial .testimonial .arrow#left {
+    left: -10px;
+  }
+  #testimonial .testimonial .arrow#right {
+    right: -5px;
+  }
+  #people-say .testimony-grid {
+    gap: 1.5rem;
+  }
+  #people-say .testimony-grid .grid-item #tes-img {
+    margin-right: 0.8rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
