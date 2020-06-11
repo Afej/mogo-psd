@@ -19,15 +19,15 @@
 
 // tablet view
 @media all and (max-width: 768px) and (min-width: 520px) {
-  #header {
-    #main-nav {
-      .nav-menu {
-        li {
-          padding: 0 0.3rem;
-        }
+  #main-nav {
+    .nav-menu {
+      li {
+        padding: 0 0.3rem;
       }
     }
+  }
 
+  #header {
     .main {
       h1 {
         font-size: 50px;
@@ -235,4 +235,75 @@
 
 // phone and smaller screens
 @media all and (max-width: 520px) {
+  #main-nav {
+    // position: relative;
+    padding: 0.5rem 1.2rem;
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 1;
+
+      .line {
+        width: 40px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+      }
+    }
+
+    .nav-menu {
+      position: fixed;
+      background: linear-gradient(
+        90deg,
+        rgb(252, 227, 138) 0%,
+        rgb(243, 129, 129) 100%
+      );
+      height: 70vh;
+      width: 100%;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        opacity: 0;
+
+        &:nth-child(even) {
+          transition: all 0.5s ease 0.2s;
+        }
+
+        &:nth-child(odd) {
+          transition: all 0.5s ease 0.4s;
+        }
+
+        a {
+          font-size: 12px;
+          font-weight: 550;
+          padding: 0.2rem;
+        }
+      }
+
+      &.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+
+        li.fade {
+          margin-top: 2rem;
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
