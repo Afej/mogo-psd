@@ -286,7 +286,7 @@ ul {
   .facts {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 0.5rem;
+    // gap: 0.5rem;
     align-items: center;
 
     .fact {
@@ -299,7 +299,11 @@ ul {
       }
 
       &:first-child {
-        margin-left: -20px;
+        // margin-left: -10px;
+
+        p {
+          font-size: 13px;
+        }
       }
 
       h1 {
@@ -506,7 +510,7 @@ ul {
 
     & > img {
       width: 570px;
-      height: 380px;
+      height: 100%;
     }
 
     .service {
@@ -584,12 +588,12 @@ ul {
 
       &#left {
         top: 50%;
-        left: -20px;
+        left: 0;
       }
 
       &#right {
         top: 50%;
-        right: -20px;
+        right: 0;
       }
     }
 
@@ -673,7 +677,7 @@ ul {
     line-height: 1.6;
     text-align: center;
     margin: 1rem;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 3rem;
   }
 
   .team {
@@ -714,7 +718,7 @@ ul {
       );
       box-shadow: 10px 10px rgb(149, 225, 211);
       height: 340px;
-      margin-bottom: 26px;
+      margin-bottom: 2.5rem;
 
       &::before {
         content: '';
@@ -731,7 +735,7 @@ ul {
       #overlay-image {
         position: absolute;
         top: 45%;
-        left: 20%;
+        left: 15%;
         width: 200px;
         height: 50px;
       }
@@ -850,12 +854,12 @@ ul {
 
       &#left {
         top: 50%;
-        left: -20px;
+        left: 0;
       }
 
       &#right {
         top: 50%;
-        right: -20px;
+        right: 0;
       }
     }
 
@@ -954,8 +958,8 @@ ul {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-areas:
-        'img h3 .'
-        'img p . '
+        'img h3 h3'
+        'img p p '
         'img line .'
         'img text text';
       // padding: 1rem 0;
@@ -974,6 +978,7 @@ ul {
         text-transform: uppercase;
         line-height: 1.2;
         margin-bottom: 0.5rem;
+        text-align: left;
       }
 
       p {
@@ -1136,7 +1141,7 @@ ul {
     display: block;
     margin: 2rem 0;
 
-    h3 {
+    h4 {
       font-size: 25px;
       font-family: 'Montserrat';
       color: rgb(243, 129, 129);
@@ -1300,9 +1305,11 @@ ul {
       }
 
       .insta-img {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
         margin-bottom: 1rem;
         img {
-          width: 88px;
+          width: 100%;
           height: 88px;
         }
       }

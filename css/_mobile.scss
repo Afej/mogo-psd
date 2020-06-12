@@ -15,6 +15,19 @@
       width: 200px;
     }
   }
+
+  #our-team {
+    .team {
+      img {
+        height: 460px;
+      }
+
+      .overlay {
+        height: 450px;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
 }
 
 // tablet view
@@ -54,9 +67,9 @@
   #facts {
     .facts {
       .fact {
-        &:first-child {
-          margin-left: 0;
-        }
+        // &:first-child {
+        //   margin-left: 0;
+        // }
         h1 {
           font-size: 50px;
         }
@@ -92,7 +105,7 @@
     .service-grid {
       & > img {
         width: 360px;
-        height: 290px;
+        // height: 290px;
       }
       .service {
         .service-item {
@@ -108,23 +121,9 @@
     }
   }
 
-  #quotes {
-    .quote {
-      .arrow {
-        &#left {
-          left: -10px;
-        }
-
-        &#right {
-          right: -5px;
-        }
-      }
-    }
-  }
-
   #our-team {
     .team {
-      grid-template-columns: repeat(3, 220px);
+      // grid-template-columns: repeat(3, 220px);
       gap: 1.5rem;
 
       p {
@@ -154,20 +153,6 @@
     }
   }
 
-  #testimonial {
-    .testimonial {
-      .arrow {
-        &#left {
-          left: -10px;
-        }
-
-        &#right {
-          right: -5px;
-        }
-      }
-    }
-  }
-
   #people-say {
     .testimony-grid {
       gap: 1.5rem;
@@ -182,7 +167,7 @@
 
   #footer {
     .footer-content {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
 
       #footer-a {
@@ -215,7 +200,7 @@
       #blogs {
         .blog-content {
           display: block;
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
         }
       }
 

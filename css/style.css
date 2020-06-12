@@ -283,7 +283,6 @@ ul {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  gap: 0.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -299,8 +298,8 @@ ul {
   border-right: 1px white solid;
 }
 
-#facts .facts .fact:first-child {
-  margin-left: -20px;
+#facts .facts .fact:first-child p {
+  font-size: 13px;
 }
 
 #facts .facts .fact h1 {
@@ -509,7 +508,7 @@ ul {
 
 #service .service-grid > img {
   width: 570px;
-  height: 380px;
+  height: 100%;
 }
 
 #service .service-grid .service {
@@ -600,12 +599,12 @@ ul {
 
 #quotes .quote .arrow#left {
   top: 50%;
-  left: -20px;
+  left: 0;
 }
 
 #quotes .quote .arrow#right {
   top: 50%;
-  right: -20px;
+  right: 0;
 }
 
 #quotes .quote #speech {
@@ -686,7 +685,7 @@ ul {
   line-height: 1.6;
   text-align: center;
   margin: 1rem;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 3rem;
 }
 
 #our-team .team {
@@ -728,7 +727,7 @@ ul {
   -webkit-box-shadow: 10px 10px #95e1d3;
           box-shadow: 10px 10px #95e1d3;
   height: 340px;
-  margin-bottom: 26px;
+  margin-bottom: 2.5rem;
 }
 
 #our-team .team .overlay::before {
@@ -746,7 +745,7 @@ ul {
 #our-team .team .overlay #overlay-image {
   position: absolute;
   top: 45%;
-  left: 20%;
+  left: 15%;
   width: 200px;
   height: 50px;
 }
@@ -886,12 +885,12 @@ ul {
 
 #testimonial .testimonial .arrow#left {
   top: 50%;
-  left: -20px;
+  left: 0;
 }
 
 #testimonial .testimonial .arrow#right {
   top: 50%;
-  right: -20px;
+  right: 0;
 }
 
 #testimonial .testimonial #test-img {
@@ -989,7 +988,7 @@ ul {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: 'img h3 .' 'img p . ' 'img line .' 'img text text';
+      grid-template-areas: 'img h3 h3' 'img p p ' 'img line .' 'img text text';
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1006,6 +1005,7 @@ ul {
 #people-say .testimony-grid .grid-item h3 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: h3;
   font-size: 14px;
   font-family: 'Montserrat';
@@ -1013,11 +1013,13 @@ ul {
   text-transform: uppercase;
   line-height: 1.2;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 #people-say .testimony-grid .grid-item p {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: p;
   font-size: 15px;
   font-family: 'Roboto';
@@ -1177,7 +1179,7 @@ ul {
   margin: 2rem 0;
 }
 
-#map .map-text h3 {
+#map .map-text h4 {
   font-size: 25px;
   font-family: 'Montserrat';
   color: #f38181;
@@ -1341,11 +1343,15 @@ ul {
 }
 
 #footer .footer-content #instagram .insta-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
   margin-bottom: 1rem;
 }
 
 #footer .footer-content #instagram .insta-img img {
-  width: 88px;
+  width: 100%;
   height: 88px;
 }
 
@@ -1385,6 +1391,13 @@ ul {
     right: 30%;
     width: 200px;
   }
+  #our-team .team img {
+    height: 460px;
+  }
+  #our-team .team .overlay {
+    height: 450px;
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media all and (max-width: 768px) and (min-width: 520px) {
@@ -1403,9 +1416,6 @@ ul {
   #about .about-images .overlay {
     height: 170px;
   }
-  #facts .facts .fact:first-child {
-    margin-left: 0;
-  }
   #facts .facts .fact h1 {
     font-size: 50px;
   }
@@ -1423,7 +1433,6 @@ ul {
   }
   #service .service-grid > img {
     width: 360px;
-    height: 290px;
   }
   #service .service-grid .service .service-item {
     padding: 0.5rem 0;
@@ -1433,15 +1442,7 @@ ul {
     padding: 0.5rem 1rem;
     margin-bottom: 0.5rem;
   }
-  #quotes .quote .arrow#left {
-    left: -10px;
-  }
-  #quotes .quote .arrow#right {
-    right: -5px;
-  }
   #our-team .team {
-    -ms-grid-columns: (220px)[3];
-        grid-template-columns: repeat(3, 220px);
     gap: 1.5rem;
   }
   #our-team .team p {
@@ -1462,12 +1463,6 @@ ul {
   #logo #logo-images {
     padding: 0 1rem;
   }
-  #testimonial .testimonial .arrow#left {
-    left: -10px;
-  }
-  #testimonial .testimonial .arrow#right {
-    right: -5px;
-  }
   #people-say .testimony-grid {
     gap: 1.5rem;
   }
@@ -1475,8 +1470,8 @@ ul {
     margin-right: 0.8rem;
   }
   #footer .footer-content {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
   #footer .footer-content #footer-a p {
@@ -1500,7 +1495,7 @@ ul {
   }
   #footer .footer-content #blogs .blog-content {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   #footer .footer-content #instagram .insta-img {
     display: -ms-grid;
