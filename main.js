@@ -20,7 +20,7 @@ hamburger.addEventListener('click', () => {
 });
 
 // Smooth Scrolling
-$('#main-nav a, .btn').on('click', function (event) {
+$('#main-nav a, #header a').on('click', function (event) {
   if (this.hash !== '') {
     event.preventDefault();
 
