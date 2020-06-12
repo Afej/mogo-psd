@@ -569,7 +569,7 @@ ul {
   background-color: rgb(248, 248, 248);
   height: 290px;
   margin: 1rem 0;
-  padding: 2rem 0;
+  padding: 1rem 0;
 
   .quote {
     position: relative;
@@ -796,9 +796,6 @@ ul {
   .work-images {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      'img1 img2 img3 img4'
-      'img5 img6 img3 img7';
     margin-top: 2rem;
 
     img {
@@ -806,27 +803,10 @@ ul {
       height: 250px;
     }
 
-    #img1 {
-      grid-area: img1;
-    }
-    #img2 {
-      grid-area: img2;
-    }
     #img3 {
-      grid-area: img3;
       height: 500px;
-    }
-    #img4 {
-      grid-area: img4;
-    }
-    #img5 {
-      grid-area: img5;
-    }
-    #img6 {
-      grid-area: img6;
-    }
-    #img7 {
-      grid-area: img7;
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 2;
     }
   }
 }

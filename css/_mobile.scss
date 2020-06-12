@@ -331,6 +331,8 @@
   }
 
   #services {
+    border-top: 1px rgb(243, 129, 129) solid;
+
     .services {
       grid-template-columns: 1fr;
       margin-top: 2rem;
@@ -363,14 +365,143 @@
     }
     .service-grid {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, auto);
+      // grid-template-rows: repeat(2, auto);
 
       & > img {
         width: 100%;
         height: 300px;
       }
+    }
+  }
 
-      .service {
+  #quotes {
+    height: auto;
+    .quote {
+      padding: 0;
+      margin: 1.5rem 0;
+      .arrow {
+        display: none;
+      }
+
+      #speech {
+        padding: 1rem;
+        margin: 0 1rem 0 0;
+      }
+
+      #quote-text {
+        margin-left: 0.5rem;
+        p {
+          font-size: 1rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  #our-team {
+    .team {
+      grid-template-columns: 1fr;
+
+      p {
+        margin: 0;
+      }
+
+      .overlay #overlay-image {
+        left: 20%;
+      }
+    }
+  }
+
+  #logo {
+    height: 100px;
+    #logo-images {
+      margin: 2rem 0 1rem 0;
+    }
+  }
+
+  #works {
+    .work-images {
+      grid-template-columns: repeat(3, 1fr);
+
+      #img3 {
+        display: none;
+      }
+    }
+  }
+
+  #testimonial {
+    padding: 0;
+    .testimonial {
+      padding: 0;
+      margin: 1rem 0;
+      .arrow {
+        display: none;
+      }
+
+      #test-img {
+        width: 120px;
+        height: 120px;
+      }
+
+      #text {
+        margin-left: 1rem;
+        p {
+          font-size: 1rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  #people-say {
+    height: auto;
+    margin-top: 0;
+    .testimony-grid {
+      grid-template-columns: 1fr;
+      margin-top: 1rem;
+      gap: 1rem;
+
+      .grid-item {
+        grid-template-columns: repeat(2, auto);
+
+        #tes-img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+
+  #blog {
+    .blog-grid {
+      grid-template-columns: 1fr;
+
+      .blog-item {
+        .blog-image {
+          .date {
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    .footer-content {
+      grid-template-columns: 1fr;
+
+      #footer-a {
+        .form-group {
+          #form-item {
+            width: 200px;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      #blogs,
+      #instagram {
+        display: none;
       }
     }
   }
