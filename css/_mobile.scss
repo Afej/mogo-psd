@@ -1,5 +1,15 @@
 // large screens
 @media all and (min-width: 1200px) {
+  #about {
+    .about-images {
+      .overlay {
+        .overlay-text {
+          left: 30%;
+        }
+      }
+    }
+  }
+
   #unique-design {
     #tab {
       position: absolute;
@@ -60,6 +70,10 @@
 
       .overlay {
         height: 170px;
+
+        .overlay-text {
+          left: 10%;
+        }
       }
     }
   }
@@ -221,7 +235,6 @@
 // phone and smaller screens
 @media all and (max-width: 520px) {
   #main-nav {
-    // position: relative;
     padding: 0.5rem 1.2rem;
 
     .hamburger {
@@ -288,6 +301,76 @@
           margin-top: 2rem;
           opacity: 1;
         }
+      }
+    }
+  }
+
+  #header {
+    .main {
+      padding: 0 1rem;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p.l-heading {
+        font-size: 50px;
+        line-height: 1;
+      }
+    }
+  }
+
+  #about {
+    .about-images {
+      display: none;
+    }
+  }
+
+  #facts {
+    display: none;
+  }
+
+  #services {
+    .services {
+      grid-template-columns: 1fr;
+      margin-top: 2rem;
+
+      .service-item {
+        margin: 0;
+      }
+    }
+  }
+
+  #unique-design {
+    height: 500px;
+
+    #tab {
+      width: 300px;
+      top: 35%;
+      left: 10%;
+    }
+
+    #phone {
+      width: 150px;
+      bottom: -60px;
+      right: 5%;
+    }
+  }
+
+  #service {
+    p {
+      display: none;
+    }
+    .service-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, auto);
+
+      & > img {
+        width: 100%;
+        height: 300px;
+      }
+
+      .service {
       }
     }
   }
