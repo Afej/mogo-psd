@@ -360,6 +360,7 @@
   }
 
   #service {
+    padding-bottom: 0;
     p {
       display: none;
     }
@@ -375,30 +376,34 @@
   }
 
   #quotes {
-    height: auto;
-    .quote {
-      padding: 0;
-      margin: 1.5rem 0;
-      .arrow {
-        display: none;
-      }
+    display: none;
+    // height: auto;
+    // .quote {
+    //   padding: 0;
+    //   margin: 1.5rem 0;
+    //   .arrow {
+    //     display: none;
+    //   }
 
-      #speech {
-        padding: 1rem;
-        margin: 0 1rem 0 0;
-      }
+    //   #speech {
+    //     padding: 1rem;
+    //     margin: 0 1rem 0 0;
+    //   }
 
-      #quote-text {
-        margin-left: 0.5rem;
-        p {
-          font-size: 1rem;
-          line-height: 1;
-        }
-      }
-    }
+    //   #quote-text {
+    //     margin-left: 0.5rem;
+    //     p {
+    //       font-size: 1rem;
+    //       line-height: 1;
+    //     }
+    //   }
+    // }
   }
 
   #our-team {
+    margin: 1rem;
+    border-top: 1px rgb(243, 129, 129) solid;
+
     .team {
       grid-template-columns: 1fr;
 
@@ -420,6 +425,8 @@
   }
 
   #works {
+    margin-top: 1rem;
+
     .work-images {
       grid-template-columns: repeat(3, 1fr);
 
@@ -430,39 +437,44 @@
   }
 
   #testimonial {
-    padding: 0;
-    .testimonial {
-      padding: 0;
-      margin: 1rem 0;
-      .arrow {
-        display: none;
-      }
+    display: none;
+    // padding: 0;
+    // .testimonial {
+    //   padding: 0;
+    //   margin: 1rem 0;
+    //   .arrow {
+    //     display: none;
+    //   }
 
-      #test-img {
-        width: 120px;
-        height: 120px;
-      }
+    //   #test-img {
+    //     width: 120px;
+    //     height: 120px;
+    //   }
 
-      #text {
-        margin-left: 1rem;
-        p {
-          font-size: 1rem;
-          line-height: 1;
-        }
-      }
-    }
+    //   #text {
+    //     margin-left: 1rem;
+    //     p {
+    //       font-size: 1rem;
+    //       line-height: 1;
+    //     }
+    //   }
+    // }
   }
 
   #people-say {
     height: auto;
-    margin-top: 0;
+    margin-top: 1rem;
     .testimony-grid {
       grid-template-columns: 1fr;
-      margin-top: 1rem;
+      margin-top: 2rem;
       gap: 1rem;
 
       .grid-item {
         grid-template-columns: repeat(2, auto);
+
+        &:nth-of-type(even) {
+          display: none;
+        }
 
         #tes-img {
           width: 60px;
@@ -473,6 +485,7 @@
   }
 
   #blog {
+    margin-top: 1rem;
     .blog-grid {
       grid-template-columns: 1fr;
 
@@ -486,7 +499,14 @@
     }
   }
 
+  #map {
+    display: none;
+  }
+
   #footer {
+    margin: 1rem;
+    border-top: 1px rgb(243, 129, 129) solid;
+
     .footer-content {
       grid-template-columns: 1fr;
 

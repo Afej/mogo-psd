@@ -1593,6 +1593,9 @@ ul {
     bottom: -60px;
     right: 5%;
   }
+  #service {
+    padding-bottom: 0;
+  }
   #service p {
     display: none;
   }
@@ -1605,25 +1608,11 @@ ul {
     height: 300px;
   }
   #quotes {
-    height: auto;
-  }
-  #quotes .quote {
-    padding: 0;
-    margin: 1.5rem 0;
-  }
-  #quotes .quote .arrow {
     display: none;
   }
-  #quotes .quote #speech {
-    padding: 1rem;
-    margin: 0 1rem 0 0;
-  }
-  #quotes .quote #quote-text {
-    margin-left: 0.5rem;
-  }
-  #quotes .quote #quote-text p {
-    font-size: 1rem;
-    line-height: 1;
+  #our-team {
+    margin: 1rem;
+    border-top: 1px #f38181 solid;
   }
   #our-team .team {
     -ms-grid-columns: 1fr;
@@ -1641,6 +1630,9 @@ ul {
   #logo #logo-images {
     margin: 2rem 0 1rem 0;
   }
+  #works {
+    margin-top: 1rem;
+  }
   #works .work-images {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -1649,43 +1641,31 @@ ul {
     display: none;
   }
   #testimonial {
-    padding: 0;
-  }
-  #testimonial .testimonial {
-    padding: 0;
-    margin: 1rem 0;
-  }
-  #testimonial .testimonial .arrow {
     display: none;
-  }
-  #testimonial .testimonial #test-img {
-    width: 120px;
-    height: 120px;
-  }
-  #testimonial .testimonial #text {
-    margin-left: 1rem;
-  }
-  #testimonial .testimonial #text p {
-    font-size: 1rem;
-    line-height: 1;
   }
   #people-say {
     height: auto;
-    margin-top: 0;
+    margin-top: 1rem;
   }
   #people-say .testimony-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin-top: 1rem;
+    margin-top: 2rem;
     gap: 1rem;
   }
   #people-say .testimony-grid .grid-item {
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
   }
+  #people-say .testimony-grid .grid-item:nth-of-type(even) {
+    display: none;
+  }
   #people-say .testimony-grid .grid-item #tes-img {
     width: 60px;
     height: 60px;
+  }
+  #blog {
+    margin-top: 1rem;
   }
   #blog .blog-grid {
     -ms-grid-columns: 1fr;
@@ -1693,6 +1673,13 @@ ul {
   }
   #blog .blog-grid .blog-item .blog-image .date {
     left: 0;
+  }
+  #map {
+    display: none;
+  }
+  #footer {
+    margin: 1rem;
+    border-top: 1px #f38181 solid;
   }
   #footer .footer-content {
     -ms-grid-columns: 1fr;
